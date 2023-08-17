@@ -1,0 +1,20 @@
+{
+    "users": [
+      {
+        "email": "user1@example.com",
+        "name": "Tre Bullock",
+        "confirmed": false
+      },
+      {
+        "email": "user2@example.com",
+        "name": "Josh Hayward",
+        "confirmed": true
+      },
+      {
+        "email": "user3@example.com",
+        "name": "Laci Organ",
+        "confirmed": false
+      }
+    ]
+  }
+  

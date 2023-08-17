@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Generation</title>
+</head>
+<body>
+  <h1>Token Generation</h1>
+  <button id="generateTokenBtn">Generate Token</button>
+
+  <script>
+    const generateTokenBtn = document.getElementById('generateTokenBtn');
+
+    generateTokenBtn.addEventListener('click', () => {
+      fetch('/generate-token') // Route on your Node.js server to handle token generation
+        .then(response => response.json())
+        .then(data => {
+          alert('Generated Token: ' + data.token);
+        })
+        .catch(error => {
+          console.error('Error generating token:', error);
+        });
+    });
+  </script>
+</body>
+</html>
